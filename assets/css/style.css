@@ -3538,7 +3538,7 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
   overflow: hidden;
   background: white;
   position: relative;
-  margin-top: -100px;
+  /* margin-top: -100px; */                                   /*!!!!!!!!!!!!!! WYKOMENTOWANE */
   -webkit-box-shadow: 10px 0 60px rgba(204, 163, 84, 0.1);
   box-shadow: 10px 0 60px rgba(204, 163, 84, 0.1); }
   .what-we-do-inner:after, .what-we-do-inner:before {
@@ -6834,3 +6834,18 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
 
 
 /* KONIEC FAQ */
+
+/* MAIN */ 
+
+.video_main{
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  filter: brightness(0.5);
+}
+
+@media only screen and (max-width: 1200px) {
+  .video_main{
+    height: 400px;
+  }
+}
