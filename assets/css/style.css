@@ -6847,5 +6847,20 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
 @media only screen and (max-width: 1200px) {
   .video_main{
     height: 400px;
+
   }
+}
+
+
+/* ABOUT US AREA */
+
+.img_about_us_1{
+  width: 100%;
+  height: 350px;
+}
+
+.img_about_us_2{
+  width: 100%;
+  height: 350px;
+  padding-right: 50px;
 }
