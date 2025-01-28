@@ -70,7 +70,7 @@
 
                     <div class="header-inner py-10 rpy-0 d-lg-flex align-items-center">
                         <div class="logo-outer">
-                            <div class="logo"><a href="index.html"><img src="assets/images/OFF-Road_Lakiernia_bez podpisów.png" alt="Logo" title="Logo" style="height: 100px;"></a></div>
+                            <div class="logo hidden"><a href="index.html"><img src="assets/images/OFF-Road_Lakiernia_bez podpisów.png" alt="Logo" title="Logo" style="height: 100px;"></a></div>
                         </div>
 
                         <div class="nav-outer clearfix mx-lg-auto">
@@ -112,7 +112,7 @@
        
         <!-- Hero Section Start -->
         <section class="hero-section py-250" style="background-image: url(assets/images/main_page.jpg);">
-            <div class="container">
+            <div class="container"> 
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-7 col-lg-8">
                         <div class="hero-content py-10 rpt-0 text-white rmb-70">
@@ -347,26 +347,18 @@
                         <div class="row justify-content-center mb-35 text-white text-center">
                             <div class="col-lg-10">
                                 <div class="section-title text-white">
-                                    <h2 class="title" style="color: black;">Kontakt z nami</h2>
+                                    <h2 class="title" style="color: black;">ZAMÓW / ZAPYTAJ</h2>
                                 </div>
-                                <p> Oferujemy profesjonalne lakierowanie proszkowe, dopasowane do Twoich potrzeb. Skontaktuj się z nami, aby uzyskać fachową pomoc i doradztwo!</p>
-                                    <h3>ul. Nadwiślańska 32</h3>
-                                    <h3>05-410 Józefów, woj. Mazowieckie</h3>
                                     <h3>Tel: +48 222 222 222</h3>
                                     <h3>biuro@lakiernia.pl</h3>
-                                    <h2 style="color: black;">Dane firmowe: </h2>
+                                    <br>NASZ ADRES
+                                    <h3>ul. Nadwiślańska 32</h3>
+                                    <h3>05-410 Józefów, woj. Mazowieckie</h3>
+                                    <h2 style="color: black;">Dane do faktury: </h2>
                                     <h3>Savicon Piotr Szulborski</h3>
                                     <h3>Miła 5, 09-402 Płock</h3>
                                     <h3>NIP 7742956252</h3>
                                     <h3>REGON 145982048</h3>
-    
-                                    <h2 style="color: black;">Dział Obsługi klienta</h2>
-                                    <h3>Tel: +48 222 222 222</h3>
-                                    <h3>biuro@lakiernia.pl</h3>
-                                    
-                                    <h2 style="color: black;">Dział Realizacji Zamówień</h2>
-                                    <h3>Tel: +48 555 555 555</h3>
-                                    <h3>zamowienia@lakiernia.pl</h3>
                             </div>
                         </div>
                         
@@ -475,6 +467,21 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const logo = document.querySelector(".logo");
+            const threshold = 50; // Punkt, w którym logo zaczyna się pojawiać (w pikselach)
+    
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > threshold) {
+                    logo.classList.remove("hidden");
+                } else {
+                    logo.classList.add("hidden");
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

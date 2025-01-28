@@ -4949,7 +4949,10 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
 .contact-form-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie w osi poziomej */
+  align-items: center;    /* Wyśrodkowanie w osi pionowej (jeśli potrzebne) */
+   }
   .contact-form-wrap .image {
     width: 20%;
     -webkit-box-flex: 0;
@@ -6861,6 +6864,18 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
 }
 
 
+
+.logo.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.logo {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
 /* RESPONSYWNOSC CUST */
 
