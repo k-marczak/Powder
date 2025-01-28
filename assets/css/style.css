@@ -6844,12 +6844,7 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
   filter: brightness(0.5);
 }
 
-@media only screen and (max-width: 1200px) {
-  .video_main{
-    height: 400px;
 
-  }
-}
 
 
 /* ABOUT US AREA */
@@ -6863,4 +6858,19 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
   width: 100%;
   height: 350px;
   padding-right: 50px;
+}
+
+
+
+/* RESPONSYWNOSC CUST */
+
+@media only screen and (max-width: 1200px) {
+  .video_main{
+    height: 400px;
+
+  }
+
+  #co_malujemy{
+    margin-top: 80px;
+  }
 }
