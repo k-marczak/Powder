@@ -4951,7 +4951,6 @@ h1, h2, h3, h4, h5, h6, .section-title .sub-title, .price-tab .nav-link span, .t
   display: -ms-flexbox;
   display: flex;
   justify-content: center; /* Wyśrodkowanie w osi poziomej */
-  align-items: center;    /* Wyśrodkowanie w osi pionowej (jeśli potrzebne) */
    }
   .contact-form-wrap .image {
     width: 20%;
