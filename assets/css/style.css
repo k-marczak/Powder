@@ -6898,3 +6898,162 @@ zielony - 3E7B27
 czarny - 123524
 */
 
+
+
+/* Header */
+.header {
+  background-color: #000;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu li {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Kontener kart */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Odstęp między kolumnami */
+  padding: 20px;
+  max-width: 1200px; /* Maksymalna szerokość całego kontenera */
+  margin: 0 auto; /* Wyśrodkowanie */
+}
+
+/* Karta */
+.card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 300px; /* Minimalna szerokość każdej karty */
+  max-width: 350px; /* Maksymalna szerokość każdej karty */
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Kontener dla ikony i tytułu */
+.icon-and-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.card h3 {
+  color: #2b8f2b;
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Hover efekt */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsywność */
+@media (max-width: 1024px) {
+  .cards-container {
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  .card {
+      flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+  .card {
+      flex: 1 1 100%;
+  }
+}
+
+
+/* --------------------------------------------- */
+
+.reservation-banner {
+    position: relative;
+    background-image: url(../images/rim.jpg); /* Ścieżka do obrazu */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Wysokość baneru */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Czarny półprzezroczysty kolor */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.overlay p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.cta-button {
+    background-color: #ff6600; /* Pomarańczowy */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65500; /* Ciemniejszy pomarańczowy na hover */
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .reservation-banner {
+        height: 250px;
+    }
+    .overlay p {
+        font-size: 16px;
+    }
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
