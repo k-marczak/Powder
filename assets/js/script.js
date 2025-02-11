@@ -425,3 +425,6 @@ document.querySelectorAll('.faq-question').forEach(button => {
 
 
 // Koniec FAQ
+
+/* KARUZELA */ 
+
